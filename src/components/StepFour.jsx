@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import success from "../assets/checked.png";
 
 export default function StepFour({ formData, handleSubmit, prevStep }) {
   const [error, setError] = useState("");
@@ -15,6 +16,10 @@ export default function StepFour({ formData, handleSubmit, prevStep }) {
 
   return (
     <div>
+      <div className="flex justify-center mb-2">
+        <img src={success} className="size-10" />
+      </div>
+
       <h2 className="text-xl text-center font-bold mb-2">
         {formData.fullName
           ? `Congratulations, ${formData.fullName}!`

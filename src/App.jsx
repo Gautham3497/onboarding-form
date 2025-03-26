@@ -49,7 +49,7 @@ export default function App() {
     setStep(1);
   };
 
-  // Animation
+  // Animation Part
   const variants = {
     hidden: { opacity: 0, x: 50 }, // Slide in from the right
     visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
