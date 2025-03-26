@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import onboarding from "./assets/workforce.png";
 import { motion, AnimatePresence } from "framer-motion";
 import StepOne from "./components/StepOne";
 import StepTwo from "./components/StepTwo";
@@ -58,6 +59,9 @@ export default function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="size-24 mb-10">
+        <img src={onboarding} alt="onboarding-img" />
+      </div>
       <StepProgress step={step} />
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md ">
         <AnimatePresence mode="wait">
